@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(11, 11, 90);
+    padding: 20px 0;
+}
+
+header h1{
+    color: #fff;
+    font-size: 50px;
+    margin-left: 70px;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-right: 200px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+header nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.image-cars{
+    display: inline;
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+    padding: 16px;
+}
+
+.submenu{
+    display: none;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+    background-color: rgb(11, 11, 90);
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+.clear{
+    clear: both;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li{
+    display: block;
+    padding: 8px;
+}
+
+.menu li:hover{
+    border-color: #fff;
+}
+
+button{
+    padding: 16px;
+    border: none;
+    background-color: rgb(11, 11, 90);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+section h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+    color: rgb(11, 11, 90);
+}
+
+.car-photo{
+    margin-right: 32px;
+}
+
+.car-photo2{
+    margin-left: 32px;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+#contact .container{
+    display: block;
+    margin-left: 750px;
+    background-color: #fff;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+form input,
+form textarea, form button{
+display: block;
+width: 320px;
+margin-bottom: 8px;
+padding: 8px;
+}
+form textarea {
+    resize: none;
+    height: 180px;
+}
+form button{
+    background-color: #182c61;
+    color:#ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #314e9e;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182c61;
+}
+
+#contact h2{
+    color: #182c61;
+}
+
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    
+    header nav li {
+        margin-right: 100px;
+    }
+    
+    .image-cars {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    section .container {
+        flex-direction: column;
+    }
+    
+    .car-photo,
+    .car-photo2 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .text {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    
+    header nav li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .image-cars {
+        width: 200px;
+    }
+    
+    section h2 {
+        font-size: 25px;
+    }
+    
+    section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    
+    .image-cars {
+        width: 150px;
+    }
+    
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+    }
+    
+    #contact .container {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
+
+
+
